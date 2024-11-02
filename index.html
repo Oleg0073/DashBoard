@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="dashboard__sidebar">
+            <div class="dash_img">
+                <img src="img/Group 31.svg" alt="">
+            </div>
+            <!-- <h2>Dashboard</h2> -->
+            <nav class="dashboard__nav">
+                <ul>
+                    <li><a href="#" class="dashboard__nav-link" data-section="dashboard">Dashboard</a><div class="arrow"></div></li>
+                    <li><a href="#" class="dashboard__nav-link" data-section="product">Product</a></li>
+                    <li><a href="#" class="dashboard__nav-link dashboard__nav-link--active" data-section="customers">Customers</a></li>
+                    <li><a href="#" class="dashboard__nav-link" data-section="income">Income</a></li>
+                    <li><a href="#" class="dashboard__nav-link" data-section="promote">Promote</a></li>
+                    <li><a href="#" class="dashboard__nav-link" data-section="help">Help</a></li>
+                </ul>
+            </nav>
+            <footer class="dashboard__footer">
+                <div class="img_evano">
+                    <img src="img/Ellipse 8.svg" alt="">
+                </div>
+                <h4>Evano<br>Project Manager</h4>
+            </footer>
+        </aside>
+
+        <main class="dashboard__content">
+            <section class="content-section" id="customers">
+                <header class="dashboard__header">
+                    <h2>Hello Evano 👋</h2>
+                    <br>
+                </header>
+            </section>
+            <div class="container">
+                <h3>All Customers</h3>
+                    <br>
+                    <p>Active members</p>
+                    <div class="search_block">
+                        <form>
+                          <input type="text" name=text" class="search" placeholder="Search">
+                          <input type="submit" name="submit" class="submit" value="">
+                        </form>
+                      </div>    
+
+                <table class="customer-table">
+                    <thead>
+                        <tr class="customer-table__header">
+                            <th>Customer Name</th>
+                            <th>Company</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th>Country</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customer-table-body">
+                  </tbody>
+                </table>
+                <div class="pagination">
+                    <span class="pagination__item pagination__item--active">1</span>
+                    <span class="pagination__item">2</span>
+                    <span class="pagination__item">3</span>
+                    <span class="pagination__item">4</span>
+                    <span class="pagination__item">...</span>
+                    <span class="pagination__item">40</span>
+                </div>
+            
+            <section class="content-section" id="income" style="display: none;">
+                <header class="dashboard__header">
+                    <h2>Income Overview</h2>
+                </header>
+                <p>This is the income section.</p>
+            </section>
+            <section class="content-section" id="promote" style="display: none;">
+                <header class="dashboard__header">
+                    <h2>Promotions</h2>
+                </header>
+                <p>This is the promote section.</p>
+            </section>
+            <section class="content-section" id="help" style="display: none;">
+                <header class="dashboard__header">
+                    <h2>Help and Support</h2>
+                </header>
+                <p>This is the help section.</p>
+            </section>
+        </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
